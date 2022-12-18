@@ -68,8 +68,12 @@ services:
     networks:
       - web_network
 
+ 
   ```
-  
+  *ตรวจสอบ config Dockercompose ด้วย คำสั่ง
+  ```
+  docker-compose config -q
+  ```
   3.2 สร้าง ไฟล์ Dockerfile
  
 ```
@@ -96,7 +100,7 @@ CMD [ "npm","run","dev" ]
 
 ```
 
-4 แก้ไขไฟล์ vite.config.js เพื่อให้ทำงานร่วมกับ Container ที่สร้าง จาก Docker ไฟลล์ที่ระบุก่อนหน้านี้ได้
+4. แก้ไขไฟล์ vite.config.js เพื่อให้ทำงานร่วมกับ Container ที่สร้าง จาก Docker ไฟลล์ที่ระบุก่อนหน้านี้ได้
 
 เดิม
 ```
@@ -128,8 +132,26 @@ export default defineConfig({
 })
 
 ```
+5.ทำการรัน
 
+```
+$docker-compose up  -d
+Creating network "reactvitewebapi" with driver "bridge"
+Building reactapp
+[+] Building 18.2s (11/11) FINISHED                                                                                                  
+ => [internal] load build definition from Dockerfile  
+```
+-ตรวจสอบว่า มี container run ขึ้นมาหรือยัง
+```
+$docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS              PORTS                    NAMES
+ece0b2ba962f   reactlab_reactapp   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:5173->5173/tcp   react_vite_webapi
 
+```
+- ทดสอบเรียกหน้า Applicaion
+```
+http://localhost:5173/
+```
 -----------------------------
 Vscode Extention ที่เตรียมไว้ดังนี้
 ```
