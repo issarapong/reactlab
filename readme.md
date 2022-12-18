@@ -95,6 +95,41 @@ EXPOSE 5173
 CMD [ "npm","run","dev" ]
 
 ```
+
+4 แก้ไขไฟล์ vite.config.js เพื่อให้ทำงานร่วมกับ Container ที่สร้าง จาก Docker ไฟลล์ที่ระบุก่อนหน้านี้ได้
+
+เดิม
+```
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+```
+แก้ไขเป็น
+
+```
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    watch: {
+      usePolling: true,
+    },
+    host: true, 
+    strictPort: true,
+    port: 5173,   
+  }
+})
+
+```
+
+
 -----------------------------
 Vscode Extention ที่เตรียมไว้ดังนี้
 ```
