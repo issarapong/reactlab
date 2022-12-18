@@ -9,6 +9,7 @@ $npm create vite@latest
 
 2.1 เลือก
 ? Select a framework: › - Use arrow-keys. Return to submit.
+
     Vanilla
     Vue
 ❯   React
@@ -16,6 +17,7 @@ $npm create vite@latest
     Lit
     Svelte
     Others
+
 
 2.2 เลือก
     ? Select a variant: › - Use arrow-keys. Return to submit.
