@@ -1,0 +1,36 @@
+My React
+1. สร้าง git repo ใน github และทำการ Clone repo ผ่าน VSCODE
+
+2.ติดตัง React ด้วย Vite
+$npm create vite@latest 
+  create-vite@4.0.0
+  Ok to proceed? (y) y
+? Project name: › .      ///พิมพ์ . ลงไปเพื่อให้ Project ติดตั้งใน current folder เลย ไม่ต้องสรา้งไหม
+
+2.1 เลือก
+? Select a framework: › - Use arrow-keys. Return to submit.
+    Vanilla
+    Vue
+❯   React
+    Preact
+    Lit
+    Svelte
+    Others
+
+2.2 เลือก
+    ? Select a variant: › - Use arrow-keys. Return to submit.
+❯   JavaScript
+    TypeScript
+    JavaScript + SWC
+    TypeScript + SWC
+
+Scaffolding project in /Volumes/Server/nodejs/myreact...
+
+Done. Now run:
+
+  npm install
+  npm run dev
+
+
+2. ทดสอบ push ขึ้น repo ที่สร้าง
+
