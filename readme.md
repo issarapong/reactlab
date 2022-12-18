@@ -37,9 +37,64 @@ Done. Now run:
 
 ```
 2. ทดสอบ push ขึ้น repo ที่สร้าง
+3.สร้าง Docker  สำหรับเตริยม Enviroment ไว้ทดสอบ
 
+3.1 สรา้งไฟล์ docker-compose.yml
 
+```
+version: '3.9'
 
+# Network
+networks:
+  web_network:
+    name: reactvitewebapi
+    driver: bridge
+
+services:
+  # React App Service
+  reactapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react_vite_webapi
+    restart: always
+    volumes:
+      - ./:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - 5173:5173
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - web_network
+
+  ```
+  
+  3.2 สร้าง ไฟล์ Dockerfile
+ 
+```
+# Pull the base image
+FROM node:16.14.2-alpine
+
+# Set the working directory
+WORKDIR /usr/app
+
+# Copy app dependencies to container
+COPY ./package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy code from host to container
+COPY . .
+
+# Expose Port
+EXPOSE 5173
+
+# Deploy app for local development
+CMD [ "npm","run","dev" ]
+
+```
 -----------------------------
 Vscode Extention ที่เตรียมไว้ดังนี้
 ```
