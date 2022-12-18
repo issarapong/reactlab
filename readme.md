@@ -1,5 +1,6 @@
-My React
-1. สร้าง git repo ใน github และทำการ Clone repo ผ่าน VSCODE
+#My React
+
+1.สร้าง git repo ใน github และทำการ Clone repo ผ่าน VSCODE
 
 2.ติดตัง React ด้วย Vite
 $npm create vite@latest 
@@ -8,8 +9,8 @@ $npm create vite@latest
 ? Project name: › .      ///พิมพ์ . ลงไปเพื่อให้ Project ติดตั้งใน current folder เลย ไม่ต้องสรา้งไหม
 
 2.1 เลือก
+```
 ? Select a framework: › - Use arrow-keys. Return to submit.
-
     Vanilla
     Vue
 ❯   React
@@ -17,10 +18,10 @@ $npm create vite@latest
     Lit
     Svelte
     Others
-
-
+```
 2.2 เลือก
-    ? Select a variant: › - Use arrow-keys. Return to submit.
+```
+   ? Select a variant: › - Use arrow-keys. Return to submit.
 ❯   JavaScript
     TypeScript
     JavaScript + SWC
@@ -33,13 +34,14 @@ Done. Now run:
   npm install
   npm run dev
 
-
+```
 2. ทดสอบ push ขึ้น repo ที่สร้าง
 
 
 
-
+-----------------------------
 Vscode Extention ที่เตรียมไว้ดังนี้
+```
 1.Color Picker  by anseki
 2.Material Icon Theme  by Philipp Kief
 3.ES7 React/Redux/GraphQL/React-Native snippets by dsznajder
@@ -49,3 +51,4 @@ Vscode Extention ที่เตรียมไว้ดังนี้
 7.Bracket Pair Colorizer by CoenraadS
 8.Auto Import by steoates 
 9.One Dark Pro by binaryify
+```
