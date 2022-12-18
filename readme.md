@@ -3,11 +3,12 @@
 1.สร้าง git repo ใน github และทำการ Clone repo ผ่าน VSCODE
 
 2.ติดตัง React ด้วย Vite
+```
 $npm create vite@latest 
   create-vite@4.0.0
   Ok to proceed? (y) y
 ? Project name: › .      ///พิมพ์ . ลงไปเพื่อให้ Project ติดตั้งใน current folder เลย ไม่ต้องสรา้งไหม
-
+```
 2.1 เลือก
 ```
 ? Select a framework: › - Use arrow-keys. Return to submit.
