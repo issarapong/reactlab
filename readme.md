@@ -34,3 +34,16 @@ Done. Now run:
 
 2. ทดสอบ push ขึ้น repo ที่สร้าง
 
+
+
+
+Vscode Extention ที่เตรียมไว้ดังนี้
+1.Color Picker  by anseki
+2.Material Icon Theme  by Philipp Kief
+3.ES7 React/Redux/GraphQL/React-Native snippets by dsznajder
+4.html to JSX by Riaz Laskar
+5.Prettier - Code formatter by Prettier
+6.Docker by Microsoft
+7.Bracket Pair Colorizer by CoenraadS
+8.Auto Import by steoates 
+9.One Dark Pro by binaryify
