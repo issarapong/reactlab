@@ -40,7 +40,11 @@ Done. Now run:
 
 
 -----------------------------
+<<<<<<< HEAD
 Vscode Extention ที่เตรียมไว้ดังนี้.
+=======
+Vscode Extention ที่เตรียมไว้ดังนี้
+>>>>>>> 9606deb11d0a353fc9a0e8abe8e4969947388a33
 ```
 1.Color Picker  by anseki
 2.Material Icon Theme  by Philipp Kief
