@@ -165,6 +165,9 @@ https://app.netlify.com/drop
 ```
 https://polite-madeleine-0fc679.netlify.app/
 ```
+
+ติดตามตอนต่อไปที่ https://github.com/issarapong/reactlab-template
+
 -----------------------------
 Vscode Extention ที่เตรียมไว้ดังนี้
 ```
