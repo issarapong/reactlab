@@ -152,6 +152,19 @@ ece0b2ba962f   reactlab_reactapp   "docker-entrypoint.s…"   About a minute ago
 ```
 http://localhost:5173/
 ```
+6. ทำการ build เพื่ออัพโหลด
+```
+ $npm install
+ $npm run build
+```
+หลังจาก build จะได้ folder ที่ชื่อว่า dist มา ให้โยน folder dist ที่ได้ ไปในหน้า อัพโหลดของ netlify เป็นอันเสร็จพิธ๊
+
+https://app.netlify.com/drop
+
+ตัวอย่าง
+```
+https://polite-madeleine-0fc679.netlify.app/
+```
 -----------------------------
 Vscode Extention ที่เตรียมไว้ดังนี้
 ```
