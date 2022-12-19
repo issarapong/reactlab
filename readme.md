@@ -1,4 +1,4 @@
-#My React
+#React Lab
 
 1.สร้าง git repo ใน github และทำการ Clone repo ผ่าน VSCODE
 
@@ -141,7 +141,7 @@ Building reactapp
 [+] Building 18.2s (11/11) FINISHED                                                                                                  
  => [internal] load build definition from Dockerfile  
 ```
--ตรวจสอบว่า มี container run ขึ้นมาหรือยัง
+- ตรวจสอบว่า มี container run ขึ้นมาหรือยัง
 ```
 $docker ps
 CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS              PORTS                    NAMES
